@@ -57,16 +57,20 @@
 			<div class="container">
 				<div class="row">
 					<div class="span5">
-						<h1 class="site-title"><img src="" alt=""><?php bloginfo('title'); ?></h1>
-						<p>The marketing world has experienced a fundamental shift.<br> Welcome to <span class="white">ralphplumb.com</span>, stay up-to-date with my posts and all things internet marketing</p>
+						<img src="<?php bloginfo('template_directory') ?>/img/logo-symbol.png" alt="Logo" class="logo-symbol">
+						<h1 class="site-title"><?php bloginfo('title'); ?></h1>
+						<p>The marketing world has experienced a fundamental shift.<br> Welcome to <span class="white">ralphplumb.com</span>, stay <br>up-to-date with my posts and all things internet marketing</p>
 					</div>
-					<div class="span5 offset1">
-						<div id="slideshow">
+					<div class="span6" id="slideshow">
+						<!-- <div id="slideshow"> -->
 							<img src="<?php bloginfo('template_directory') ?>/img/ph.jpg" alt="">
-						</div>
+							<div class="hover-bar"></div>
+							<div class="hover-bar"></div>
+							<div class="hover-bar"></div>
+						<!-- </div> -->
 					</div>
 				</div>
 			</div>
 		</header>
 	    <div class="container">
-				<div class="row">
+				

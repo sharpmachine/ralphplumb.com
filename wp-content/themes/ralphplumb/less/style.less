@@ -5,6 +5,7 @@ Project Name: ralphplumb.com
 body {
 	background: url(../img/bg.jpg);
 	border-top: 2px solid @yellow;
+	border-bottom: 2px solid @yellow;
 }
 
 h1.site-title {
@@ -13,6 +14,13 @@ h1.site-title {
 	font-family: "rockwell-bold", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 64px;
 	font-weight: 400;
+	// background: url(../img/logo-symbol.png) no-repeat -100px;
+}
+
+.logo-symbol {
+	position: relative;
+	top: 15px;
+	left: -53px;
 }
 
 header{
@@ -29,24 +37,117 @@ header{
 }
 
 #slideshow {
-	border: 10px solid @gray;
+	margin-left: 80px;
+	border: 10px solid rgba(255,255,255,0.1);
+
+	img {
+		border-bottom: 10px solid rgba(255,255,255,0.1);
+	}
+
+	.hover-bar {
+		float: left;
+		width: 151px;
+		height: 7px;
+		margin-right: 3px;
+		background-color: @yellow;
+
+		&:last-child {
+			width: 152px;
+			margin-right: 0;
+		}
+	}
 }
 
 #book {
 	height: 480px;
-	margin-top: -80px;
-	margin-left: 10px;
+	margin: -80px 0 30px -10px;
 	background: url(../img/book.png);
-	border: 10px solid @grayLight;
+	border: 10px solid black;
+}
+
+#form {
+	width: 430px;
+	margin-left: 0;
+	padding: 40px 20px 20px 20px;
 }
 
 form.signup {
+	padding: 30px 35px;
 	border: 1px solid @grayLight;
 
 	input[type="text"],
 	input[type="email"] {
+		width: 350px;
 		height: 30px;
 		.box-shadow(inset 0px 3px 3px @grayLight);
+	}
+
+	input[type="submit"] {
+		.center-block;
+		width: 199px;
+		height: 48px;
+		color: @white;
+		font-family: 'rockwell-bold';
+		font-size: 15px;
+		text-transform: uppercase;
+		background: url(../img/download-btn.png) no-repeat;
+		border: none;
+	}
+}
+
+#social-media {
+	height: 125px;
+	margin-top: 15px;
+	margin-bottom: 65px;
+}
+
+.sm {
+	width: 223px;
+	height: 121px;
+	margin-right: -4px;
+	padding-bottom: 10px;
+	background: url(../img/social-media-bg.png) no-repeat;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	a {
+		display: block;
+		width: 223px;
+		height: 121px;
+	}
+
+	#facebook {
+		background: url(../img/facebook.png) no-repeat center center;
+
+		&:hover {
+			background: url(../img/facebook-hover.png) no-repeat 2px 3px;
+		}
+	}
+
+	#twitter {
+		background: url(../img/twitter.png) no-repeat 82px 36px;
+
+		&:hover {
+			background: url(../img/twitter-hover.png) no-repeat 2px 3px;
+		}
+	}
+
+	#google {
+		background: url(../img/google.png) no-repeat 84px 30px;
+
+		&:hover {
+			background: url(../img/google-hover.png) no-repeat 2px 3px;
+		}
+	}
+
+	#linkedin {
+		background: url(../img/linkedin.png) no-repeat center center;
+
+		&:hover {
+			background: url(../img/linkedin-hover.png) no-repeat 2px 3px;
+		}
 	}
 }
 
@@ -55,66 +156,21 @@ form.signup {
 	color: @white;
 }
 
-img.size-auto,
-img.size-full,
-img.size-large,
-img.size-medium,
-.attachment img {
-	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
-	height: auto; /* Override height to match resized width for correct aspect ratio. */
-}
-.alignleft,
-img.alignleft {
-	display: inline;
-	float: left;
-	margin-right: 24px;
-	margin-top: 4px;
-}
-.alignright,
-img.alignright {
-	display: inline;
-	float: right;
-	margin-left: 24px;
-	margin-top: 4px;
-}
-.aligncenter,
-img.aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-img.alignleft,
-img.alignright,
-img.aligncenter {
-	margin-bottom: 12px;
+.arrow {
+	background: url(../img/arrow.png) no-repeat 140px 0;
 }
 
-
-
-
-
-
-
-
-
-
-.entry-title {
-	
+footer {
+	width: 100%;
+	height: 35px;
+	color: @yellowDark;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 2.5;
+	background-color: @grayDarker;
+	#gradient > .vertical(@grayDark, @grayDarker);
 }
 
-.entry-meta {
-	
-}
-
-.entry-utility {
-	
-}
-
-.entry-content {
-	
-}
-
-.entry-summary {
-	
+.border {
+	border: 10px solid rgba(255,255,255,0.1);
 }
