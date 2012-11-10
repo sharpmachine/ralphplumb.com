@@ -1,6 +1,4 @@
 <?php
-include 'functions/need-help-dashboard-widget.php';
-include 'functions/customize-admin.php';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -239,61 +237,6 @@ function smm_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
-	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Secondary Widget Area', 'smm' ),
-		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 3, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'First Footer Widget Area', 'smm' ),
-		'id' => 'first-footer-widget-area',
-		'description' => __( 'The first footer widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 4, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Second Footer Widget Area', 'smm' ),
-		'id' => 'second-footer-widget-area',
-		'description' => __( 'The second footer widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 5, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Third Footer Widget Area', 'smm' ),
-		'id' => 'third-footer-widget-area',
-		'description' => __( 'The third footer widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 6, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Fourth Footer Widget Area', 'smm' ),
-		'id' => 'fourth-footer-widget-area',
-		'description' => __( 'The fourth footer widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
 }
 /** Register sidebars by running smm_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'smm_widgets_init' );
@@ -442,3 +385,30 @@ function getgo_method() {
 }    
  
 add_action('wp_enqueue_scripts', 'getgo_method');
+
+function remove_dashboard_widgets(){
+  global$wp_meta_boxes;
+  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']); 
+  unset($wp_meta_boxes['dashboard']['normal']['core']['yoast_db_widget']);
+}
+
+add_action('wp_dashboard_setup', 'remove_dashboard_widgets');
+
+//Login Logo
+function custom_login_logo() {
+  echo '<style type="text/css">
+    h1 a 
+    {
+    	 background-image:url('.get_bloginfo('template_directory').'/img/logo.png) !important;
+		 background-size: 200px 200px !important;
+    	 width: 200px !important; /* Same width as logo */
+    	 height: 200px !important; /* Same height as logo */
+	     margin-left: -20px !important; /* adjust to center logo above login box */
+	 }
+    </style>';
+}
+
+add_action('login_head', 'custom_login_logo');

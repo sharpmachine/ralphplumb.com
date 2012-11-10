@@ -81,7 +81,7 @@
   }
   .page-header h1 small {
     display: block;
-    line-height: 18px;
+    line-height: 24px;
   }
   input[type="checkbox"],
   input[type="radio"] {
@@ -123,10 +123,6 @@
   }
 }
 @media (max-width: 767px) {
-  body {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     margin-left: -20px;
@@ -182,6 +178,69 @@
   .input-append input[class*="span"] {
     display: inline-block;
     width: auto;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  header {
+    height: 535px;
+    padding-top: 15px;
+    background-color: #1D1D1D;
+    background-position: bottom center;
+  }
+  h1.site-title {
+    margin-bottom: 25px;
+    padding-left: 50px;
+    font-size: 50px;
+  }
+  .logo-symbol {
+    position: relative;
+    top: 25px;
+    left: 0;
+  }
+  #slideshow {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #slideshow .hover-bar {
+    width: 111px;
+  }
+  #slideshow .hover-bar:last-child {
+    width: 112px;
+  }
+  #book {
+    height: auto;
+    margin: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+  }
+  #form {
+    width: 320px;
+  }
+  #form #book-cover {
+    padding: 0 0 25px 70px;
+  }
+  form.signup {
+    padding: 27px 35px 12px 30px;
+  }
+  form.signup input[type="text"],
+  form.signup input[type="email"] {
+    width: 100%;
+  }
+  #blog {
+    width: auto;
+  }
+  #blog h2 {
+    padding-left: 0;
+    width: 81px;
+    background: url(../img/arrow.png) no-repeat 25px 5px;
+  }
+  #social-media {
+    width: 223px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -394,6 +453,81 @@
   input.span1, textarea.span1, .uneditable-input.span1 {
     width: 32px;
   }
+  header {
+    height: 353px;
+  }
+  header p {
+    font-size: 18px;
+  }
+  h1.site-title {
+    margin-bottom: 15px;
+    font-size: 44px;
+  }
+  #slideshow {
+    margin-left: 62px;
+  }
+  #slideshow .hover-bar {
+    width: 115px;
+  }
+  #slideshow .hover-bar:last-child {
+    width: 116px;
+  }
+  #book {
+    height: 650px;
+  }
+  #form {
+    width: 300px;
+  }
+  #form #book-cover {
+    padding: 0 0 25px 50px;
+  }
+  form.signup input[type="text"],
+  form.signup input[type="email"] {
+    width: 215px;
+  }
+  #blog {
+    width: 358px;
+    padding-left: 16px;
+  }
+  .sm {
+    background: url(../img/social-media-bg-ipad.png) no-repeat;
+  }
+  .sm #facebook:hover,
+  .sm #twitter:hover,
+  .sm #google:hover,
+  .sm #linkedin:hover {
+    width: 166px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .sm #facebook {
+    background: url(../img/facebook.png) no-repeat 70px 30px;
+  }
+  .sm #facebook:hover {
+    background: url(../img/facebook-hover.png) no-repeat center 3px;
+  }
+  .sm #twitter {
+    background: url(../img/twitter.png) no-repeat 54px 36px;
+  }
+  .sm #twitter:hover {
+    background: url(../img/twitter-hover.png) no-repeat center 3px;
+  }
+  .sm #google {
+    background: url(../img/google.png) no-repeat 54px 30px;
+  }
+  .sm #google:hover {
+    background: url(../img/google-hover.png) no-repeat center 3px;
+  }
+  .sm #linkedin {
+    background: url(../img/linkedin.png) no-repeat 54px 30px;
+  }
+  .sm #linkedin:hover {
+    background: url(../img/linkedin-hover.png) no-repeat center 3px;
+  }
 }
 @media (max-width: 979px) {
   body {
@@ -407,7 +541,7 @@
   }
   .navbar-fixed-top {
     position: static;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
   }
   .navbar-fixed-top .navbar-inner {
     padding: 5px;
@@ -426,7 +560,7 @@
   }
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 9px;
+    margin: 0 0 12px;
   }
   .nav-collapse .nav > li {
     float: none;
@@ -496,8 +630,8 @@
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
-    padding: 9px 15px;
-    margin: 9px 0;
+    padding: 12px 15px;
+    margin: 12px 0;
     border-top: 1px solid #282828;
     border-bottom: 1px solid #282828;
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);

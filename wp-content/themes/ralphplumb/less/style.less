@@ -8,40 +8,40 @@ body {
 	border-bottom: 2px solid @yellow;
 }
 
+header{
+	height: 420px;
+	padding-top: 45px;
+	color: @grayLight;;
+	background: url(../img/page-top-bg.jpg) no-repeat @black;
+
+	p {
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 30px;
+		text-shadow: #333 1px 1px 2px;
+	}
+}
+
 h1.site-title {
 	margin-bottom: 70px;
 	color: @white;
 	font-family: "rockwell-bold", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 64px;
 	font-weight: 400;
-	// background: url(../img/logo-symbol.png) no-repeat -100px;
 }
 
 .logo-symbol {
 	position: relative;
 	top: 15px;
-	left: -53px;
-}
-
-header{
-	height: 425px;
-	padding-top: 45px;
-	color: @grayLight;;
-	background: url(../img/page-top-bg.jpg);
-
-	p {
-		font-size: 20px;
-		font-weight: normal;
-		line-height: 30px;
-	}
+	left: -55px;
 }
 
 #slideshow {
 	margin-left: 80px;
-	border: 10px solid rgba(255,255,255,0.1);
+	border: 10px solid rgba(255,255,255,0.2);
 
 	img {
-		border-bottom: 10px solid rgba(255,255,255,0.1);
+		border-bottom: 10px solid rgba(255,255,255,0.2);
 	}
 
 	.hover-bar {
@@ -60,38 +60,142 @@ header{
 
 #book {
 	height: 480px;
-	margin: -80px 0 30px -10px;
-	background: url(../img/book.png);
-	border: 10px solid black;
+	margin: -73px 0 30px -10px;
+	background: url(../img/book.png) repeat-y top center;
+	border: 10px solid rgba(255,255,255,0.2);
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    .box-shadow(0 20px 20px -20px @grayLight);
 }
 
 #form {
 	width: 430px;
 	margin-left: 0;
-	padding: 40px 20px 20px 20px;
+	padding: 24px 20px 20px 20px;
+
+	ul {
+		width: 278px;
+
+		li {
+			padding: 10px 0 10px 50px;
+			background: url(../img/tick.png) no-repeat 10px;
+			border-bottom: 1px solid @grayLighter;
+
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+
+	#book-cover {
+		padding-top: 25px;
+	}
 }
 
 form.signup {
-	padding: 30px 35px;
-	border: 1px solid @grayLight;
+	clear: both;
+	margin-top: 228px;
+	padding: 27px 35px 12px 35px;
+	border: 1px solid @grayLighter;
 
 	input[type="text"],
 	input[type="email"] {
 		width: 350px;
 		height: 30px;
+		margin-bottom: 15px;
 		.box-shadow(inset 0px 3px 3px @grayLight);
 	}
 
 	input[type="submit"] {
 		.center-block;
 		width: 199px;
-		height: 48px;
+		height: 43px;
 		color: @white;
 		font-family: 'rockwell-bold';
 		font-size: 15px;
+		text-shadow: 1px 1px @black;
 		text-transform: uppercase;
 		background: url(../img/download-btn.png) no-repeat;
+		.box-shadow(0 3px 10px -1px @grayLight); 
 		border: none;
+	}
+}
+
+#blog {
+	width: 460px;
+	margin-left: 0;
+	padding: 30px 0;
+
+	h2 {
+		margin-top: -17px;
+		padding-left: 20px;
+		width: 81px;
+		background: url(../img/arrow.png) no-repeat 45px 5px;
+	}
+
+	a.btn {
+		height: 14px;
+		margin: -5px 20px 0 0;
+		color: @gray;
+		line-height: 16px;
+		font-size: 13px;
+	}
+
+	#posts {
+		clear: both;
+
+		ul, li {
+			margin-left: 0;
+			list-style: none;
+
+			li {
+				position: relative;
+				height: 100px;
+				padding: 17px 20px 17px 175px;
+				border-top: 2px solid @grayLighter;
+				#gradient > .vertical;
+
+				a {
+					display: block;
+					height: 100px;
+					padding-top: 22px;
+					color: @black;
+					font-family: 'rockwell-bold';
+					font-size: 16px;
+				}
+
+				&:first-child {
+					background: url(../img/handshake.jpg) no-repeat 20px 17px;
+				}
+
+				&:nth-child(2) {
+					background: url(../img/puzzle.jpg) no-repeat 20px 17px;
+				}
+
+				&:last-child {
+					background: url(../img/chart.jpg) no-repeat 20px 17px;
+				}
+			}
+		}
+
+		.rss-date {
+			display: block;
+			position: absolute;
+			top: 21px;
+			color: @yellowDark;
+			font-family: 'rockwell-regular';
+			font-size: 12px;
+			font-style: italic;
+
+			&:before {
+				content: "Posted on ";
+			}
+
+		}
+	}
+
+	h3.widget-title {
+		display: none;
 	}
 }
 
@@ -108,6 +212,7 @@ form.signup {
 	padding-bottom: 10px;
 	background: url(../img/social-media-bg.png) no-repeat;
 
+
 	&:last-child {
 		margin-right: 0;
 	}
@@ -118,11 +223,23 @@ form.signup {
 		height: 121px;
 	}
 
+	#facebook,
+	#twitter,
+	#google,
+	#linkedin {
+
+		&:hover {
+			height: 119px;
+			.box-shadow(0 15px 20px -10px @grayLight);
+		}
+	}
+
 	#facebook {
 		background: url(../img/facebook.png) no-repeat center center;
 
 		&:hover {
 			background: url(../img/facebook-hover.png) no-repeat 2px 3px;
+			.border-radius(5px);
 		}
 	}
 

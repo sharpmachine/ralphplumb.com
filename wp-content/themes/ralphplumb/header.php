@@ -33,14 +33,10 @@
     	<!-- Le styles -->
     	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
     	<link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet">
-		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-    	<!-- Le fav and touch icons -->
+    	<!-- Le favicon -->
     	<link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.7.min.js"></script>
 		<!--[if lte IE 8]><script src="<?php bloginfo('template_directory'); ?>/js/selectivizr-min.js"></script><![endif]-->
@@ -72,5 +68,4 @@
 				</div>
 			</div>
 		</header>
-	    <div class="container">
-				
+	  <div class="container">

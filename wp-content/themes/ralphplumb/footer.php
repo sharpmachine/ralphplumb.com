@@ -3,8 +3,7 @@
 		<footer role="contentinfo">
 			<div class="container">
 				<div id="site-info">
-					&copy;<?php echo date ('Y'); ?> All rights reserved by RalphPlumb.com
-					<a href="http://twitter.github.com/bootstrap" target="_blank">Bootstrap Docs</a><!-- Remove for production -->
+					&copy; <?php echo date ('Y'); ?> All rights reserved by RalphPlumb.com
 				</div><!-- #site-info -->
 			</div>
 		</footer>

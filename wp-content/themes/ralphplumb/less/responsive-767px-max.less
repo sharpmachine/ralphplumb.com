@@ -72,8 +72,8 @@
 
   // Padding to set content in a bit
   body {
-    padding-left: 20px;
-    padding-right: 20px;
+    // padding-left: 20px;
+    // padding-right: 20px;
   }
   // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
@@ -144,6 +144,85 @@
   .input-append input[class*="span"] {
     display: inline-block; // redeclare so they don't wrap to new lines
     width: auto;
+  }
+
+  // Custom 
+  .container {
+    padding: 0 20px;
+  }
+
+  header {
+    height: 535px;
+    padding-top: 15px;
+    background-color: #1D1D1D;
+    background-position: bottom center;
+  }
+
+  h1.site-title {
+    margin-bottom: 25px;
+    padding-left: 50px;
+    font-size: 50px;
+  }
+
+  .logo-symbol {
+    position: relative;
+    top: 25px;
+    left: 0;
+  }
+
+  #slideshow {
+    margin-top: 20px;
+    margin-left: 0;
+
+    .hover-bar {
+      width: 111px;
+
+      &:last-child {
+        width: 112px;
+      }
+    }
+  }
+
+  #book {
+    height: auto;
+    margin: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  #form {
+    width: 320px;
+
+    #book-cover {
+      padding: 0 0 25px 70px;
+    }
+  }
+
+  form.signup {
+    padding: 27px 35px 12px 30px;
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+    }
+  }
+
+  #blog {
+    width: auto;
+
+    h2 {
+    padding-left: 0;
+    width: 81px;
+    background: url(../img/arrow.png) no-repeat 25px 5px;
+    }
+  }
+
+  #social-media {
+    width: 223px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
