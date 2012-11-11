@@ -26,25 +26,25 @@
 				echo ' | ' . sprintf( __( 'Page %s', 'smm' ), max( $paged, $page ) );
 			?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="">
-    	<meta name="author" content="Sharp Machine Media">
-	
-		<link rel="profile" href="http://gmpg.org/xfn/11" />
-    	<!-- Le styles -->
-    	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
-    	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
-    	<link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet">
-    	<!--[if lte IE 8]>
-    		<link href="<?php bloginfo('template_directory'); ?>/css/ie7.css" rel="stylesheet">
-    	<![endif]-->
-			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  	<meta name="description" content="">
+  	<meta name="author" content="Sharp Machine Media">
 
-    	<!-- Le favicon -->
-    	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico">
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+  	<!-- Le styles -->
+  	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+  	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
+  	<link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet">
+  	<!--[if lte IE 8]>
+  		<link href="<?php bloginfo('template_directory'); ?>/css/ie7.css" rel="stylesheet">
+  	<![endif]-->
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+  	<!-- Le favicon -->
+  	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico">
 
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.7.min.js"></script>
 		<!--[if lte IE 8]><script src="<?php bloginfo('template_directory'); ?>/js/selectivizr-min.js"></script><![endif]-->
-	
+
 		<?php
 			if ( is_singular() && get_option( 'thread_comments' ) )
 				wp_enqueue_script( 'comment-reply' );
@@ -64,24 +64,21 @@
 					</div>
 					<div class="span6" id="slideshow">
 				
-							<a href="<?php bloginfo('template_directory') ?>/img/ph.jpg" rel="lightbox">
-								<img src="<?php bloginfo('template_directory') ?>/img/ph.jpg" alt="">
+							<a href="<?php the_field('main_photo', 'options'); ?>" rel="lightbox">
+								<img src="<?php the_field('main_photo_preview', 'options'); ?>" alt="Ralph Plumb" class="featured-img">
 							</a>
 							
 							<div class="hover-bar">
-								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox">
-									<img src="<?php bloginfo("template_directory") ?>/img/branson.jpg" alt=""></a>
-								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox" title="Click bar to open picture" class="bar"></a>
+								<img src="<?php the_field('rollover_1', 'options'); ?>" alt="Rollover 1">
+								<a href="<?php the_field('rollover_1', 'options'); ?>" rel="lightbox" title="Click bar to open picture" class="bar"></a>
 							</div>
 							<div class="hover-bar">
-								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox">
-									<img src="<?php bloginfo("template_directory") ?>/img/branson.jpg" alt=""></a>
-								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox" title="Click bar to open picture" class="bar"></a>
+								<img src="<?php the_field('rollover_2', 'options'); ?>" alt="Rollover 2">
+								<a href="<?php the_field('rollover_2', 'options'); ?>" rel="lightbox" title="Click bar to open picture" class="bar"></a>
 							</div>
 							<div class="hover-bar">
-								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox">
-									<img src="<?php bloginfo("template_directory") ?>/img/branson.jpg" alt=""></a>
-								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox" title="Click bar to open picture" class="bar"></a>
+								<img src="<?php the_field('rollover_3', 'options'); ?>" alt="Rollover 3">
+								<a href="<?php the_field('rollover_3', 'options'); ?>" rel="lightbox" title="Click bar to open picture" class="bar"></a>
 							</div>
 						
 					</div>
