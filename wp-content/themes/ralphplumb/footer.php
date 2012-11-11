@@ -31,10 +31,6 @@
 	<!-- Remove these before deploying to production -->
 	<script src="<?php bloginfo ('template_directory'); ?>/js/hashgrid.js" type="text/javascript"></script>
 
-	 <script type="text/javascript">
-     
-    </script>
-
 <?php wp_footer(); ?>
 	</body>
 </html>

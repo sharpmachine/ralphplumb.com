@@ -31,8 +31,12 @@
 	
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
     	<!-- Le styles -->
+    	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
     	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
     	<link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet">
+    	<!--[if lte IE 8]>
+    		<link href="<?php bloginfo('template_directory'); ?>/css/ie7.css" rel="stylesheet">
+    	<![endif]-->
 			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
     	<!-- Le favicon -->
