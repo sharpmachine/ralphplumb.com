@@ -36,7 +36,7 @@
 			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
     	<!-- Le favicon -->
-    	<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico">
 
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.7.min.js"></script>
 		<!--[if lte IE 8]><script src="<?php bloginfo('template_directory'); ?>/js/selectivizr-min.js"></script><![endif]-->
@@ -55,15 +55,31 @@
 					<div class="span5">
 						<img src="<?php bloginfo('template_directory') ?>/img/logo-symbol.png" alt="Logo" class="logo-symbol">
 						<h1 class="site-title"><?php bloginfo('title'); ?></h1>
-						<p>The marketing world has experienced a fundamental shift.<br> Welcome to <span class="white">ralphplumb.com</span>, stay <br>up-to-date with my posts and all things internet marketing</p>
+						<!-- <p>The marketing world has experienced a fundamental shift.<br> Welcome to <span class="white">ralphplumb.com</span>, stay <br>up-to-date with my posts and all things internet marketing</p> -->
+						<p><?php the_field('intro_copy', 'options'); ?></p>
 					</div>
 					<div class="span6" id="slideshow">
-						<!-- <div id="slideshow"> -->
-							<img src="<?php bloginfo('template_directory') ?>/img/ph.jpg" alt="">
-							<div class="hover-bar"></div>
-							<div class="hover-bar"></div>
-							<div class="hover-bar"></div>
-						<!-- </div> -->
+				
+							<a href="<?php bloginfo('template_directory') ?>/img/ph.jpg" rel="lightbox">
+								<img src="<?php bloginfo('template_directory') ?>/img/ph.jpg" alt="">
+							</a>
+							
+							<div class="hover-bar">
+								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox">
+									<img src="<?php bloginfo("template_directory") ?>/img/branson.jpg" alt=""></a>
+								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox" title="Click bar to open picture" class="bar"></a>
+							</div>
+							<div class="hover-bar">
+								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox">
+									<img src="<?php bloginfo("template_directory") ?>/img/branson.jpg" alt=""></a>
+								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox" title="Click bar to open picture" class="bar"></a>
+							</div>
+							<div class="hover-bar">
+								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox">
+									<img src="<?php bloginfo("template_directory") ?>/img/branson.jpg" alt=""></a>
+								<a href="<?php bloginfo("template_directory") ?>/img/branson.jpg" rel="lightbox" title="Click bar to open picture" class="bar"></a>
+							</div>
+						
 					</div>
 				</div>
 			</div>

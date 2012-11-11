@@ -403,10 +403,10 @@ function custom_login_logo() {
     h1 a 
     {
     	 background-image:url('.get_bloginfo('template_directory').'/img/logo.png) !important;
-		 background-size: 200px 200px !important;
-    	 width: 200px !important; /* Same width as logo */
-    	 height: 200px !important; /* Same height as logo */
-	     margin-left: -20px !important; /* adjust to center logo above login box */
+		 background-size: 427px 81px !important;
+    	 width: 427px !important; /* Same width as logo */
+    	 height: 81px !important; /* Same height as logo */
+	     margin-left: -75px !important; /* adjust to center logo above login box */
 	 }
     </style>';
 }

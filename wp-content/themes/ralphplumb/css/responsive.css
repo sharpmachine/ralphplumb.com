@@ -208,6 +208,10 @@
   #slideshow .hover-bar:last-child {
     width: 112px;
   }
+  #slideshow .hover-bar img {
+    width: 105px;
+    top: -80px;
+  }
   #book {
     height: auto;
     margin: 0;
@@ -472,6 +476,10 @@
   #slideshow .hover-bar:last-child {
     width: 116px;
   }
+  #slideshow .hover-bar img {
+    top: -82px;
+    width: 109px;
+  }
   #book {
     height: 650px;
   }
@@ -487,10 +495,17 @@
   }
   #blog {
     width: 358px;
+    margin-left: 0;
     padding-left: 16px;
   }
   .sm {
     background: url(../img/social-media-bg-ipad.png) no-repeat;
+  }
+  .sm #facebook,
+  .sm #twitter,
+  .sm #google,
+  .sm #linkedin {
+    overflow: hidden;
   }
   .sm #facebook:hover,
   .sm #twitter:hover,
