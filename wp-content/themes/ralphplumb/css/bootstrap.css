@@ -4210,11 +4210,11 @@ h1.site-title {
 #slideshow {
   margin-left: 80px;
   border: 10px solid #989898;
-  border: 10px solid rgba(255, 255, 255, 0.2);
+  border: 10px solid rgba(255, 255, 255, 0.1);
 }
 #slideshow img {
   border-bottom: 10px solid #989898;
-  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.1);
 }
 #slideshow .hover-bar {
   position: relative;
@@ -4255,7 +4255,7 @@ h1.site-title {
   margin: -73px 0 30px -10px;
   background: url(../img/book.png) repeat-y top center;
   border: 10px solid #989898;
-  border: 10px solid rgba(255, 255, 255, 0.2);
+  border: 10px solid rgba(0, 0, 0, 0.1);
   -webkit-background-clip: padding-box;
   /* for Safari */
 
