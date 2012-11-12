@@ -4177,7 +4177,7 @@ a.badge:hover {
 Project Name: ralphplumb.com
 */
 body {
-  background: url(../img/bg.jpg) repeat-x;
+  background: url(../img/bg.jpg) repeat;
   border-top: 2px solid #ffc049;
   border-bottom: 2px solid #ffc049;
 }
@@ -4231,7 +4231,6 @@ h1.site-title {
   display: block;
 }
 #slideshow .hover-bar:last-child {
-  width: 152px;
   margin-right: 0;
 }
 #slideshow .hover-bar img {

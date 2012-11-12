@@ -184,14 +184,14 @@
   }
   header {
     height: 535px;
-    padding-top: 15px;
+    padding-top: 10px;
     background-color: #1D1D1D;
     background-position: bottom center;
   }
   h1.site-title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-left: 50px;
-    font-size: 50px;
+    font-size: 38px;
   }
   .logo-symbol {
     position: relative;
@@ -199,14 +199,16 @@
     left: 0;
   }
   #slideshow {
+    max-width: 420px;
     margin-top: 20px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   #slideshow .hover-bar {
-    width: 111px;
+    width: 32.6%;
   }
   #slideshow .hover-bar:last-child {
-    width: 112px;
+    width: 33%;
   }
   #slideshow .hover-bar img {
     width: 105px;
@@ -220,25 +222,53 @@
     box-shadow: none;
   }
   #form {
-    width: 320px;
+    width: auto;
+  }
+  #form ul {
+    width: auto;
   }
   #form #book-cover {
-    padding: 0 0 25px 70px;
+    float: none;
+  }
+  #form #book-cover img {
+    position: relative;
+    left: -20px;
+    display: block;
+    margin: 0 auto;
   }
   form.signup {
-    padding: 27px 35px 12px 30px;
+    margin-top: 20px;
+    padding: 27px 40px 12px 30px;
   }
   form.signup input[type="text"],
   form.signup input[type="email"] {
     width: 100%;
   }
+  form.signup input[type="submit"] {
+    width: auto;
+    padding: 0 10px;
+    font-size: 12px;
+  }
   #blog {
     width: auto;
+    padding-bottom: 0;
   }
   #blog h2 {
     padding-left: 0;
     width: 81px;
     background: url(../img/arrow.png) no-repeat 25px 5px;
+  }
+  #blog #posts ul li {
+    padding-left: 100px;
+  }
+  #blog #posts ul li:first-child {
+    background: url(../img/handshake-mobile.jpg) no-repeat 0 27px;
+  }
+  #blog #posts ul li:nth-child(2) {
+    background: url(../img/puzzle-mobile.jpg) no-repeat 0 27px;
+  }
+  #blog #posts ul li:last-child {
+    background: url(../img/chart-mobile.jpg) no-repeat 0 27px;
   }
   #social-media {
     width: 223px;
@@ -246,6 +276,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+#lightbox-container-image-box {
+  width: 90% !important;
+  height: 90% !important;
+}
+#lightbox-container-image-data-box {
+  width: 90% !important;
+  padding: 0 !important;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {

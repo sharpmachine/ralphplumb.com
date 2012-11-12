@@ -153,15 +153,15 @@
 
   header {
     height: 535px;
-    padding-top: 15px;
+    padding-top: 10px;
     background-color: #1D1D1D;
     background-position: bottom center;
   }
 
   h1.site-title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-left: 50px;
-    font-size: 50px;
+    font-size: 38px;
   }
 
   .logo-symbol {
@@ -171,14 +171,16 @@
   }
 
   #slideshow {
+    max-width: 420px;
     margin-top: 20px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
 
     .hover-bar {
-      width: 111px;
+      width: 32.6%;
 
       &:last-child {
-        width: 112px;
+        width: 33%;
       }
 
       img {
@@ -197,29 +199,65 @@
   }
 
   #form {
-    width: 320px;
+    width: auto;
+
+    ul {
+      width: auto;
+    }
 
     #book-cover {
-      padding: 0 0 25px 70px;
+      // padding: 0 0 25px 70px;
+      float: none;
+
+      img {
+        position: relative;
+        left: -20px;
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
 
   form.signup {
-    padding: 27px 35px 12px 30px;
+    margin-top: 20px;
+    padding: 27px 40px 12px 30px;
 
     input[type="text"],
     input[type="email"] {
       width: 100%;
     }
+
+    input[type="submit"] {
+      width: auto;
+      padding: 0 10px;
+      font-size: 12px;
+    }
   }
 
   #blog {
     width: auto;
+    padding-bottom: 0;
 
     h2 {
     padding-left: 0;
     width: 81px;
     background: url(../img/arrow.png) no-repeat 25px 5px;
+    }
+
+      #posts ul li {
+        padding-left: 100px;
+
+      &:first-child {
+        background: url(../img/handshake-mobile.jpg) no-repeat 0 27px;
+      }
+
+      &:nth-child(2) {
+        background: url(../img/puzzle-mobile.jpg) no-repeat 0 27px;
+      }
+
+      &:last-child {
+        background: url(../img/chart-mobile.jpg) no-repeat 0 27px;
+      }
     }
   }
 
@@ -229,5 +267,15 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
 
+#lightbox-container-image-box {
+  width: 90% !important;
+  height: 90% !important;
+}
+
+#lightbox-container-image-data-box {
+  width: 90% !important;
+  padding: 0 !important;
+  // display: none;
 }
