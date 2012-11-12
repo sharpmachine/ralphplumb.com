@@ -11,15 +11,14 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-transition.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-collapse.js"></script>
 
-	<!-- scripts concatenated and minified via ant build script-->
-	<script src="<?php bloginfo ('template_directory'); ?>/js/plugins.js"></script>
-	<script src="<?php bloginfo ('template_directory'); ?>/js/script.js"></script>
-	<!-- Remove these before deploying to production -->
-	<script src="<?php bloginfo ('template_directory'); ?>/js/hashgrid.js" type="text/javascript"></script>
 
-<?php wp_footer(); ?>
+		<!-- scripts concatenated and minified via ant build script-->
+		<script src="<?php bloginfo ('template_directory'); ?>/js/plugins-ck.js"></script>
+		<script src="<?php bloginfo ('template_directory'); ?>/js/script-ck.js"></script>
+		<!-- Remove these before deploying to production -->
+		<script src="<?php bloginfo ('template_directory'); ?>/js/hashgrid.js" type="text/javascript"></script>
+
+		<?php wp_footer(); ?>
 	</body>
 </html>

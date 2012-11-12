@@ -276,14 +276,14 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
-#lightbox-container-image-box {
-  width: 90% !important;
-  height: 90% !important;
-}
-#lightbox-container-image-data-box {
-  width: 90% !important;
-  padding: 0 !important;
+  #lightbox-container-image-box {
+    width: 90% !important;
+    height: 90% !important;
+  }
+  #lightbox-container-image-data-box {
+    width: 90% !important;
+    padding: 0 !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {

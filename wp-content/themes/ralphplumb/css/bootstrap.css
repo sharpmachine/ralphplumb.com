@@ -4231,6 +4231,7 @@ h1.site-title {
   display: block;
 }
 #slideshow .hover-bar:last-child {
+  width: 152px;
   margin-right: 0;
 }
 #slideshow .hover-bar img {
